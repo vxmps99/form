@@ -1,0 +1,27 @@
+*{margin: 0px;
+}
+input:invalid:required{
+    background-image: linear-gradient(to top,pink,rgb(255, 239, 242));
+}
+input:valid{
+    border: solid 2px green;
+}
+header{
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+#set1{
+    position: relative;
+    left: 40px;
+}
+*{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+#upload{
+    background-image:url(/iconos/upload1.png) ;
+    background-repeat: no-repeat round;
+}

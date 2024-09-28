@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>formulario</h1>
+    </header>
+    <main>
+        <fieldset id="">
+            <legend>formulario info general</legend>
+            <form action="mailto:vanini.mx@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">nombre</label><br>
+                    <input type="text" name="nombre" required placeholder="ingresa nombre"><br>
+                <label for="apellido">apellido</label><br>
+                    <input type="text" name="apellido"><br>
+                <label for="email"> correo electronico</label><br>
+                    <input type="email" name="email"><br>
+                <label for="telefono">telefono</label><br>
+                    <input type="tel" name="telefono"><br>
+                <label for="edad">edad</label><br>
+                    <input type="number" name="edad"><br>
+                <label type="contraseña">contraseña</label><br>
+                    <input type="password" name="contraseña" required><br>
+                <button>enviar</button>
+                <input id="upload" type="submit">
+            </form>
+        </fieldset>
+        <h2>Ubicación</h2>
+        <form>
+            <label for="alcaldia">selccione alcaldía</label>
+                <select name="alcaldia">
+                    <option value="Azc">Azcapotzalco</option>
+                    <option value="bj">Benito Juarez</option>
+                    <option value="AO">Alvaro Obregon</option>
+                    <option value="MH">Miguel Hidalgo</option><br>
+                </select>
+                <input type="submit">
+        </form>
+        <h2>Metodo de pago</h2>
+        <form>
+            <label for="pagos">efectivo</label>
+                <input type="radio" name="pagos" value="efectivo" checked><br>
+            <label for="pagos">tarjeta de credito</label>
+                <input type="radio" name="pagos" value="tarjeta de credito"><br>
+            <label for="pagos">tarjeta de debito</label>
+                <input type="radio" name="pagos" value="tarejta de debito"><br>
+            <label for="pagos">trasferencia</label>
+                <input type="radio" name="pagos" value="transferencia"><br>
+            <input type="submit">
+        </form>
+        <h2>selecciona tus condimentos</h2>
+        <form>
+            <label for="orden">salsa</label>
+                <input type="checkbox" name="orden" value="salsa"><br>
+            <label for="orden">crema</label>
+                <input type="checkbox" name="orden" value="crema"><br>
+            <label for="orden">queso</label>
+                <input type="checkbox" name="orden" value="queso"><br>
+            <label for="orden">lechuga</label>
+                <input type="checkbox" name="orden" value="lechuga"><br>
+            <input type="submit">
+
+        <form>
+            <h2> Ingresa tu fecha de reserva</h2>
+            <label for="salida">fecha de salida</label>
+                <input type="date" name="salida" min="2024-09-28">
+            <label for="regreso">fecha regreso</label>
+                <input type="date" name="regreso" max="2025-12-31">
+            <input type="submit">
+        </form>
+        <form>
+            <h2>sube tu trabajo</h2>
+            <input id="trabajo" type="file" name="trabajo" accept=".pdf" multiple><br>
+                <textarea cols="38" rows="8" name="dudas">ingresa tus dudas acerca del trabajo final</textarea>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
